@@ -1,0 +1,115 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    background-color: #fff;
+}
+
+header {
+    margin: auto;
+    background-color: #c9c9c9;
+}
+
+header h1 {
+    font-size: 48px;
+    color: #000000;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+}
+
+header a {
+    position: absolute;
+    top: 0%;
+}
+
+#box_1 {
+    margin-top: -16px;
+}
+
+#box_1_1 {
+    margin-left: -10%;
+}
+
+ul {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+.li1 button {
+    width: 25%;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.li1 button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#btn1 {
+    position: absolute;
+    top: 0%;
+    left: 25%;
+}
+
+#btn2 {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+}
+
+#btn3 {
+    position: absolute;
+    top: 0%;
+    left: 75%;
+}
+
+#box_1_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#box_1_2 button {
+    width: 30%;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#box_1_2 button:hover {
+    background-color: #e0e0e0;
+}
+
+#box_1_2 button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+#box_1_2 button p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+#box_1_3{
+    background-color: #000321;
+    color: #ffffff;
+    height: 400px;
+    width: 100%;
+}
+
