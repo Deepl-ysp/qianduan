@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新UI测试文件</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+        }
+        header{
+            background-color: #333;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1{
+            margin: 5px;
+        }
+        header ul{
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+        header ul li{
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            margin-right: 25px;
+            border: #fff 1px solid;
+        }
+        header ul li:hover{
+            background-color: #333;
+            box-shadow: 0 0 10px #fff;
+        }
+        header ul li a{
+            line-height: 30px;
+            padding: 5px;
+        }
+       .box-max{
+            width: 100%;
+            height: 100%;
+            background-color: #c3c3c3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button{
+            width: 150px;
+            height: 100px;
+            background-color: #000;
+            transition: all 0.3s;
+        }
+        button:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        .bottom{
+            padding: 25px;
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .active{
+            background-color: #fff;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>前端开发指南</h1>
+        <ul>
+            <li><a href="./html/login.html">登录注册</a></li>
+            <li><a href="">技术交流</a></li>
+            <li><a href="">支持一下</a></li>
+        </ul>
+    </header>
+    <div class="box-max">
+        <div class="boxmin1">
+            <ul class="left-ul">
+                <li class="items1"><button id="button-jichuyvyan">基础语言</button></li>
+                <li class="items1"><button id="button-qianduankuangjia">前端框架</button></li>
+                <li class="items1"><button id="button-jinjieyuyan">进阶语言</button></li>
+                <li class="items1"><button id="button-shizhanxiangmu">实战项目</button></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var button_jichuyvyan = document.getElementById('button-jichuyvyan');
+        var button_qianduankuangjia = document.getElementById('button-qianduankuangjia');
+        var button_jinjieyuyan = document.getElementById('button-jinjieyuyan');
+        var button_shizhanxiangmu = document.getElementById('button-shizhanxiangmu');
+        var items1 = document.getElementsByClassName('items1');
+        function buttonLeftClick(I,A,B,C){
+            I.classList.add('active');
+            A.classList.remove('active');
+            B.classList.remove('active');
+            C.classList.remove('active');
+        };
+        button_jichuyvyan.onclick = function(){
+            buttonLeftClick(button_jichuyvyan,button_qianduankuangjia,button_jinjieyuyan,button_shizhanxiangmu);
+        };
+        button_qianduankuangjia.onclick = function(){
+            buttonLeftClick(button_qianduankuangjia,button_jichuyvyan,button_jinjieyuyan,button_shizhanxiangmu);
+        };
+        button_jinjieyuyan.onclick = function(){
+            buttonLeftClick(button_jinjieyuyan,button_jichuyvyan,button_qianduankuangjia,button_shizhanxiangmu);
+        };
+        button_shizhanxiangmu.onclick = function(){
+            buttonLeftClick(button_shizhanxiangmu,button_jichuyvyan,button_qianduankuangjia,button_jinjieyuyan);
+        };
+    </script>
+    <div class="bottom">
+        <h1>站点信息</h1><hr>
+        <h2>站长：老橙子ACK</h2>
+        <h3>邮箱：yspydys@163.com</h3>
+        <h3>QQ：1417278970</h3>
+        <h3>微信：rbgayl1084</h3>
+        <h2>站点技术：MySQL、Python、HTML、CSS、JavaScript</h2>
+        <h2>站点源码下载：<a href="https://github.com/Deepl-ysp/qianduan.git">https://github.com/Deepl-ysp/qianduan.git</a></h2>
+    </div>
+</body>
+</html>
