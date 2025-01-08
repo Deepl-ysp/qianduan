@@ -85,13 +85,11 @@ button:hover {
     color: #000;
 }
 .index-box ul li button:hover span {
-    background-color: #fff;
     color: #000;
 }
 .index-box ul li img {
     width: 150px;
 }
-
 
 .bottom {
     padding: 25px;

@@ -11,7 +11,7 @@
     <header>
         <h1>前端开发指南</h1>
         <ul>
-            <li><a href="./html/login.html">登录注册</a></li>
+            <li><a href="./php/LoginAndEnroll/enroll.php">登录注册</a></li>
             <li><a href="">技术交流</a></li>
             <li><a href="">支持一下</a></li>
         </ul>
@@ -35,10 +35,10 @@
              </div>
         </div>
     </div>
-    <button id="test-button">测试专用</button>
+    <!-- <button id="test-button">测试专用</button>
     <div id="test-box" style="color: black;">
         测试专用
-    </div>
+    </div> -->
     <div class="bottom">
         <h1>站点信息</h1>
         <hr style="background-color: #fff; border: #fff solid 1px;">
@@ -46,9 +46,20 @@
         <h3>邮箱：yspydys@163.com</h3>
         <h3>QQ：1417278970</h3>
         <h3>微信：rbgayl1084</h3>
-        <h2>站点技术：MySQL、Python、HTML、CSS、JavaScript</h2>
+        <h2>站点技术：MySQL、PHP、HTML、CSS、JavaScript</h2>
         <h2>站点源码下载：<a href="https://github.com/Deepl-ysp/qianduan.git">https://github.com/Deepl-ysp/qianduan.git</a></h2>
     </div>
     <script src="./js/index.js"></script>
 </body>
 </html>
+<?php
+include '../Connect/connect_mysql_users.php';
+// 开启session
+session_start();
+
+if(isset($_SESSION['username'])){
+    $username = $_SESSION['username'];
+    echo "<script>alert('欢迎,$username');</script>";
+    include '';
+}
+?>
