@@ -5,33 +5,45 @@
     color: #fff;
     text-decoration: none;
     border: none;
+    box-sizing: border-box;
 }
+
+body {
+    min-width: 1080px;
+    font-family: Arial, sans-serif;
+}
+
 header {
     background-color: #333;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+    font-size: 15px;
 }
+
 header h1 {
     margin: 5px;
 }
+
 header ul {
     display: flex;
-    justify-items: center;
     align-items: center;
 }
+
 header ul li {
     height: 30px;
     width: 100px;
     text-align: center;
     margin-right: 25px;
-    border: #fff 1px solid;
+    border: 1px solid #fff;
 }
+
 header ul li:hover {
-    background-color: #333;
     box-shadow: 0 0 10px #fff;
 }
+
 header ul li a {
     line-height: 30px;
     padding: 5px;
@@ -41,52 +53,68 @@ header ul li a {
     height: 500px;
     background-color: #c3c3c3;
     display: flex;
-    justify-content: start;
-    align-items: self-start;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
-.boxmin1{
+
+.boxmin1 {
     width: 150px;
     height: 500px;
     background-color: #333;
 }
+
 button {
     width: 150px;
-    height: 100px;
+    height: 125px;
     background-color: #000;
     transition: all 0.3s;
 }
+
 button:hover {
     background-color: #e9e9e9;
     color: #000;
 }
+
 .active {
     background-color: #fff;
     color: #000;
 }
-.index-box ul{
+
+.index-box ul {
     height: 500px;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     flex-wrap: wrap;
     overflow: auto;
+    padding: 20px;
 }
+
 .index-box ul li {
-    margin: 25px;
+    margin: 20px;
 }
+
 .index-box ul li button {
     width: 200px;
     height: 200px;
     font-size: 25px;
     background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s;
 }
+
 .index-box ul li button:hover {
     background-color: #fff;
     color: #000;
 }
+
 .index-box ul li button:hover span {
     color: #000;
 }
+
 .index-box ul li img {
     width: 150px;
 }
@@ -94,7 +122,10 @@ button:hover {
 .bottom {
     padding: 25px;
     background-color: #333;
-    display: flex;  
+    display: flex;
     flex-direction: column;
     justify-content: center;
+}
+@media (max-width: 1080px) {
+    
 }
